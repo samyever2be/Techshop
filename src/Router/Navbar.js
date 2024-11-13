@@ -9,15 +9,15 @@ const Navbar = ()=>{
         <div>
             <>
             <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/shop">Shop</Link></li>
-                <li><Link to="/cart">
+                <li><Link to="/techshop">Home</Link></li>
+                <li><Link to="/techshop/shop">Shop</Link></li>
+                <li><Link to="/techshop/cart">
                 {cart.length > 0 ? (
                 <span className='cart-count'>{cart.length}</span>
                 ) : ""
                 }
                 <FontAwesomeIcon icon={faCartShopping} />View Cart</Link></li>
-                <li><Link to="/contact">contact</Link></li>
+                <li><Link to="/techshop/contact">contact</Link></li>
             </ul>
             </>
         </div>
